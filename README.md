@@ -46,6 +46,7 @@ A curated list of Microservice Architecture related principles and technologies.
   - [World Wide Web](#world-wide-web)
   - [HTTP/1.1](#http11)
   - [HTTP/2](#http2)
+  - [CoAP](#coap)
   - [RPC](#rpc)
   - [Messaging](#messaging-1)
   - [Security](#security-1)
@@ -95,6 +96,7 @@ A curated list of Microservice Architecture related principles and technologies.
 ### Agnostic
 
 - [Apex](https://github.com/apex/apex) - Tool for deploying and managing AWS Lambda functions. With shims for languages not yet supported by Lambda, you can use Golang out of the box.
+- [CoAP](http://coap.technology/impls.html) - Constrained Application Protocol implementations.
 - [GRPC](http://www.grpc.io/) - A high performance, open source, general RPC framework that puts mobile and HTTP/2 first. Libraries in C, C++, Java, Go, Node.js, Python, Ruby, Objective-C, PHP and C#.
 
 ### C
@@ -167,17 +169,17 @@ A curated list of Microservice Architecture related principles and technologies.
 #### Java
 
 - [Airlift](https://github.com/airlift/airlift) - Framework for building REST services in Java.
-- [Blade](https://github.com/biezhi/blade) - Modular web framework for Java.
 - [Dropwizard](https://dropwizard.github.io/) - Java framework for developing ops-friendly, high-performance, RESTful web services.
 - [Jersey](https://jersey.java.net/) - RESTful Web Services in Java. JAX-RS (JSR 311 & JSR 339) Reference Implementation.
+- [MSF4J](https://github.com/wso2/msf4j) - High throughput & low memory footprint Java microservices framework.
 - [QBit](https://github.com/advantageous/qbit) - Reactive programming library for building microservices.
 - [Ratpack](https://ratpack.io/) - Set of Java libraries that facilitate fast, efficient, evolvable and well tested HTTP applications. specific support for the Groovy language is provided.
 - [Restlet](http://restlet.com/) - Helps Java developers build web APIs that follow the REST architecture style.
 - [Spring Boot](http://projects.spring.io/spring-boot/) - Makes it easy to create stand-alone, production-grade Spring based applications.
-- [MSF4J](https://github.com/wso2/msf4j) - WSO2 Microservice Framework for Java.
 
 #### Scala
 
+- [Akka HTTP](http://doc.akka.io/docs/akka/current/scala/http) - Open-source toolkit for building REST/HTTP-based integration layers on top of Scala and Akka (will replace Spray).
 - [Colossus](https://github.com/tumblr/colossus) - I/O and microservice library for Scala.
 - [Finatra](http://twitter.github.io/finatra/) - Fast, testable, Scala HTTP services built on Twitter-Server and Finagle.
 - [Play](https://www.playframework.com/) - The high velocity web framework for Java and Scala.
@@ -195,6 +197,7 @@ A curated list of Microservice Architecture related principles and technologies.
 - [Koa](http://koajs.com/) - Next generation web framework for Node.js
 - [Loopback](http://loopback.io/) - Node.js framework for creating APIs and easily connecting to backend data sources.
 - [Micro](http://github.com/zeithq/micro) - Asynchronous HTTP microservices.
+- [Micro-Whalla](https://github.com/czerwonkabartosz/Micro-Whalla) - A simple, fast framework for writing microservices in Node.js communicate using RPC / IPC.
 - [Restify](http://restify.com/) - Node.js module built specifically to enable you to build correct REST web services.
 - [Seneca](http://senecajs.org/) - A microservices toolkit for Node.js
 - [Serverless](https://github.com/serverless/serverless) - Build and maintain web, mobile and IoT applications running on AWS Lambda and API Gateway (formerly known as JAWS).
@@ -205,8 +208,10 @@ A curated list of Microservice Architecture related principles and technologies.
 
 ### Python
 
+- [Flask](http://flask.pocoo.org/) - Python framework for microservices based on Werkzeug and Jinja 2.
 - [Nameko](https://github.com/onefinestay/nameko) - Python framework for building microservices.
 - [Tornado](http://www.tornadoweb.org/) - Web framework and asynchronous networking library.
+- [web.py](http://webpy.org/) - Minimalist web framework for Python.
 
 ### Ruby
 
@@ -236,6 +241,7 @@ A curated list of Microservice Architecture related principles and technologies.
 - [Etcd](https://github.com/coreos/etcd) - Highly-available key-value store for shared configuration and service discovery.
 - [Eureka](https://github.com/Netflix/eureka/wiki/Eureka-at-a-glance) - REST based service that is primarily used in the AWS cloud for locating services for the purpose of load balancing and failover of middle-tier servers.
 - [Registrator](https://github.com/gliderlabs/registrator) - Service registry bridge for Docker. Supports pluggable service registries, which currently includes Consul, etcd and SkyDNS 2.
+- [Shaman](https://github.com/nanopack/shaman) - Small, lightweight, api-driven DNS server.
 - [SkyDNS](https://github.com/skynetservices/skydns) - Distributed service for announcement and discovery of services built on top of etcd. It utilizes DNS queries to discover available services.
 - [SmartStack](https://github.com/airbnb/smartstack-cookbook) - Airbnb's automated service discovery and registration framework.
 - [Spring Cloud Config](http://cloud.spring.io/spring-cloud-config/) - Provides server and client-side support for externalized configuration in a distributed system.
@@ -268,17 +274,20 @@ A curated list of Microservice Architecture related principles and technologies.
 - [Onyx](https://github.com/onyx-platform/onyx) - Distributed, masterless, high performance, fault tolerant data processing for Clojure.
 - [Ordasity](https://github.com/boundary/ordasity) - Designed to spread persistent or long-lived workloads across several machines.
 - [Redisson](https://github.com/mrniko/redisson) - Distributed and scalable Java data structures on top of Redis server.
+- [Serf](https://www.serfdom.io/) - Decentralized solution for cluster membership, failure detection and orchestration.
 
 ### Messaging
 
 - [ØMQ](http://zeromq.org/) - Brokerless intelligent transport layer.
 - [ActiveMQ](http://activemq.apache.org/) - Powerful open-source messaging and integration patterns server.
+- [Aeron](https://github.com/real-logic/Aeron) - Efficient reliable UDP unicast, UDP multicast, and IPC message transport.
 - [Apollo](http://activemq.apache.org/apollo/) - Faster, more reliable, easier to maintain messaging broker built from the foundations of the original ActiveMQ.
 - [Ascoltatori](https://github.com/mcollina/ascoltatori) - Pub/sub library for Node.
 - [Beanstalk](http://kr.github.io/beanstalkd/) - Simple, fast work queue.
 - [Disque](https://github.com/antirez/disque) - Distributed message broker.
 - [Kafka](http://kafka.apache.org/) - Publish-subscribe messaging rethought as a distributed commit log.
 - [Malamute](https://github.com/zeromq/malamute) - ZeroMQ enterprise messaging broker.
+- [Mist](https://github.com/nanopack/mist) - A distributed, tag-based pub/sub service.
 - [Mosca](http://www.mosca.io/) - MQTT broker as a module.
 - [Mosquitto](http://mosquitto.org/) - Open-source message broker that implements the MQTT protocol.
 - [Nanomsg](http://nanomsg.org/) - Socket library that provides several common communication patterns for building distributed systems.
@@ -286,6 +295,7 @@ A curated list of Microservice Architecture related principles and technologies.
 - [NSQ](http://nsq.io/) - A realtime distributed messaging platform.
 - [Qpid](https://qpid.apache.org/) - Cross-platform messaging components built on AMQP.
 - [RabbitMQ](https://www.rabbitmq.com/) - Open-source Erlang-based message broker that just works.
+- [VerneMQ](https://verne.mq) - Open-source, scalable, Erlang-based MQTT broker.
 
 ### Serialization
 
@@ -318,6 +328,7 @@ A curated list of Microservice Architecture related principles and technologies.
 - [Elliptics](http://reverbrain.com/elliptics/) - Fault tolerant distributed key/value storage.
 - [Geode](http://geode.incubator.apache.org/) - Open-source, distributed, in-memory database for scale-out applications.
 - [MemSQL](http://www.memsql.com/) - High-performance, in-memory database that combines the horizontal scalability of distributed systems with the familiarity of SQL.
+- [Parquet](https://parquet.apache.org/) - Columnar storage format available to any project in the Hadoop ecosystem, regardless of the choice of data processing framework, data model or programming language.
 - [Reborn](https://github.com/reborndb/reborn) - Distributed database fully compatible with redis protocol.
 - [RethinkDB](http://rethinkdb.com/) - Open-source, scalable database that makes building realtime apps easier.
 - [Secure Scuttlebutt](https://github.com/ssbc/docs) - P2P database of message-feeds.
@@ -351,6 +362,7 @@ A curated list of Microservice Architecture related principles and technologies.
 - [Beats](https://www.elastic.co/products/beats) - Lightweight shippers for Elasticsearch & Logstash.
 - [Collectd](https://collectd.org/) - The system statistics collection daemon.
 - [Elastalert](https://github.com/yelp/elastalert) - Easy & flexible alerting for Elasticsearch.
+- [Ganglia](http://ganglia.info/) - A scalable distributed monitoring system for high-performance computing systems such as clusters and grids.
 - [Grafana](http://grafana.org/) - An open-source, feature rich metrics dashboard and graph editor for
 Graphite, InfluxDB & OpenTSDB.
 - [Graphite](http://graphite.wikidot.com/) - Scalable realtime graphing.
@@ -388,6 +400,8 @@ Graphite, InfluxDB & OpenTSDB.
 - [Janky](https://github.com/github/janky) - Continuous integration server built on top of Jenkins and Hubot.
 - [Jenkins](http://jenkins-ci.org/) - Extensible open-source continuous integration server.
 - [Nscale](https://github.com/nearform/nscale) - Open toolkit supporting configuration, build and deployment of connected container sets.
+- [Project 6](https://github.com/DatawiseIO/Project6) - Software for deploying and managing Docker containers across a cluster of hosts, with a focus on simplifying network and storage configurations for on-premises environments.
+- [Rancher](https://github.com/rancher/rancher) - Open-source platform for operating Docker in production.
 - [RPM Maven](http://mojo.codehaus.org/rpm-maven-plugin/) - Allows artifacts from one or more projects to be packaged in an RPM for distribution.
 
 ### Hosted
@@ -410,6 +424,7 @@ of the testing and deployment process.
 - [Docker](https://www.docker.com/) - Open platform for distributed applications for developers and sysadmins.
 - [Kubernetes](http://kubernetes.io/) - Open-source orchestration system for Docker containers.
 - [Linux Containers](https://linuxcontainers.org/) - The umbrella project behind LXC, LXD, LXCFS and CGManager.
+- [RancherOS](https://github.com/rancher/os) - The smallest, easiest way to run Docker in production at scale.
 
 ## Documentation & Modeling
 
@@ -445,6 +460,10 @@ of the testing and deployment process.
 
 - [RFC7540](https://tools.ietf.org/html/rfc7540) - Hypertext Transfer Protocol Version 2.
 
+### CoAP
+
+- [RFC7252](http://coap.technology/spec.html) - The Constrained Application Protocol (CoAP) is a specialized web transfer protocol for use with constrained nodes and constrained networks in the Internet of Things.
+
 ### RPC
 
 - [BERT-RPC 1.0](http://bert-rpc.org/) - An attempt to specify a flexible binary serialization and RPC protocol that are compatible with the philosophies of dynamic languages.
@@ -458,9 +477,10 @@ of the testing and deployment process.
 
 ### Security
 
-- [RFC5246](http://tools.ietf.org/html/rfc5246) - The Transport Layer Security (TLS) Protocol Version 1.2.
-- [RFC6066](http://tools.ietf.org/html/rfc6066) - TLS Extensions.
-- [RFC6749](http://tools.ietf.org/html/rfc6749) - The OAuth 2.0 authorization framework.
+- [RFC5246](https://tools.ietf.org/html/rfc5246) - The Transport Layer Security (TLS) Protocol Version 1.2.
+- [RFC6066](https://tools.ietf.org/html/rfc6066) - TLS Extensions.
+- [RFC6347](https://tools.ietf.org/html/rfc6347) - Datagram Transport Layer Security Version 1.2.
+- [RFC6749](https://tools.ietf.org/html/rfc6749) - The OAuth 2.0 authorization framework.
 - [RFC7515](https://tools.ietf.org/html/rfc7515) - JSON Web Signature (JWS) represents content secured with digital signatures or Message Authentication Codes (MACs) using JSON-based data structures.
 - [RFC7519](https://tools.ietf.org/html/rfc7519) - JSON Web Token (JWT) is a compact, URL-safe means of representing claims to be transferred between two parties.
 - [RFC7642](https://tools.ietf.org/html/rfc7642) - SCIM: Definitions, overview, concepts, and requirements.
@@ -479,6 +499,7 @@ of the testing and deployment process.
 - [RFC4627](https://tools.ietf.org/html/rfc4627) - JavaScript Object Notation (JSON).
 - [RFC7049](http://tools.ietf.org/search/rfc7049) - Concise Binary Object Representation (CBOR).
 - [BSON](http://bsonspec.org/) - Bin­ary JSON (BSON).
+- [SBE](https://github.com/FIXTradingCommunity/fix-simple-binary-encoding) - Simple Binary Encoding (SBE).
 - [SMILE](http://wiki.fasterxml.com/SmileFormatSpec) - JSON-compatible binary data format.
 - [MSGPACK](https://github.com/msgpack/msgpack/blob/master/spec.md) - MessagePack Specification.
 
@@ -562,4 +583,3 @@ Feel free to [open an issue](https://github.com/mfornos/awesome-microservices/is
 ## Acknowledgments
 
 Table of contents generated with [DocToc](https://github.com/thlorenz/doctoc)
-
