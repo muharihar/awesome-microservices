@@ -174,6 +174,7 @@ A curated list of Microservice Architecture related principles and technologies.
 - [Ratpack](https://ratpack.io/) - Set of Java libraries that facilitate fast, efficient, evolvable and well tested HTTP applications. specific support for the Groovy language is provided.
 - [Restlet](http://restlet.com/) - Helps Java developers build web APIs that follow the REST architecture style.
 - [Spring Boot](http://projects.spring.io/spring-boot/) - Makes it easy to create stand-alone, production-grade Spring based applications.
+- [MSF4J](https://github.com/wso2/msf4j) - WSO2 Microservice Framework for Java.
 
 #### Scala
 
