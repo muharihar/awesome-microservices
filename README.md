@@ -19,7 +19,7 @@ A curated list of Microservice Architecture related principles and technologies.
   - [Java VM](#java-vm)
   - [Node.js](#nodejs)
   - [Perl](#perl)
-  - [PHP](#PHP)
+  - [PHP](#php)
   - [Python](#python)
   - [Ruby](#ruby)
 - [Capabilities](#capabilities)
