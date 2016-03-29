@@ -206,6 +206,9 @@ A curated list of Microservice Architecture related principles and technologies.
 
 - [Mojolicious](http://mojolicio.us/) - Next generation web framework for Perl.
 
+### PHP
+- [Apigility] (https://apigility.org/) - PHP Microservices Framework by Zend.
+
 ### Python
 
 - [Flask](http://flask.pocoo.org/) - Python framework for microservices based on Werkzeug and Jinja 2.
